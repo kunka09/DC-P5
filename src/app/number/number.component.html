@@ -1,0 +1,42 @@
+<style>
+    .btn-circle {
+    width: 100px;
+    height: 100px;
+    padding: 6px 0px;
+    border-radius: 60px;
+    color: aqua;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+</style>
+<div class="alert alert-info text-center h-800">
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[0])">
+      {{randomNumber[0]}}
+    </button>
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[1])">
+      {{randomNumber[1]}}
+    </button>
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[2])">
+      {{randomNumber[2]}}
+    </button>
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[3])">
+      {{randomNumber[3]}}
+    </button>
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[4])">
+      {{randomNumber[4]}}
+    </button>
+    <button type="button" class="btn btn-circle m-3 text-dark" (click)="buttonSelect(randomNumber[5])">
+      {{randomNumber[5]}}
+    </button>
+  
+  </div>
+  <hr>
+  <h1 class="text-center">You have selected</h1>
+  <div class="container col-md-4 offset-4">
+        <div class="card card-block" style="height: 100px; background-color: rgb(198, 212, 211);">
+          <div class="card-body align-items-center d-flex justify-content-center">
+              <h1 style="font-size: 50px;">{{selected}}</h1>
+          </div>
+        </div>
+    </div>
